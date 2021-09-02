@@ -2,10 +2,10 @@ import React from 'react';
 
 function Nav() {
   const categories = [
-    { name: "commercial", description: "Photos of grocery stores, food trucks, and other commercial projects" },
-    { name: "portraits", description: "Portraits of people in my life" },
-    { name: "food", description: "Delicious delicacies" },
-    { name: "landscape", description: "Fields, farmhouses, waterfalls, and the beauty of nature" },
+    { name: "Commercial", description: "Photos of grocery stores, food trucks, and other commercial projects" },
+    { name: "Portraits", description: "Portraits of people in my life" },
+    { name: "Food", description: "Delicious delicacies" },
+    { name: "Landscape", description: "Fields, farmhouses, waterfalls, and the beauty of nature" },
   ];
 
   function categorySelected(name) {
@@ -13,16 +13,16 @@ function Nav() {
   }
 
   return (
-    <header>
+    <header className="flex-row px-1">
     <h2>
-      <a href="/">
+      <a data-testid="link" href="/">
         <span role="img" aria-label="camera"> 📸</span> Oh Snap!
       </a>
     </h2>
     <nav>
       <ul className="flex-row">
         <li className="mx-2">
-          <a href="#about">
+          <a data-testid="about" href="#about">
             About me
           </a>
         </li>
